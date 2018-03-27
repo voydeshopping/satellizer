@@ -1,7 +1,7 @@
 /**
  * Satellizer 0.15.5
- * (c) 2016 Sahat Yalkabov 
- * License: MIT 
+ * (c) 2016 Sahat Yalkabov
+ * License: MIT
  */
 
 (function (global, factory) {
@@ -48,8 +48,7 @@
                     scopeDelimiter: ' ',
                     display: 'popup',
                     oauthType: '2.0',
-                    popupOptions: { width: 452, height: 633 },
-                    state: function () { return encodeURIComponent(Math.random().toString(36).substr(2)); }
+                    popupOptions: { width: 452, height: 633 }
                 },
                 github: {
                     name: 'github',
