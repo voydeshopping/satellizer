@@ -46,7 +46,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' && module.ex
           name: 'google',
           url: '/auth/google',
           authorizationEndpoint: 'https://accounts.google.com/o/oauth2/auth',
-          redirectUri: window.location.origin,
+          redirectUri: window.location.origin + '/auth/facebook/callback',
           requiredUrlParams: ['scope'],
           optionalUrlParams: ['state'],
           scope: ['profile', 'email'],
@@ -54,11 +54,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' && module.ex
           scopeDelimiter: ' ',
           display: 'popup',
           oauthType: '2.0',
-          popupOptions: { width: 452, height: 633 },
-          state: function() {
-            var rand = Math.random().toString(36).substr(2);
-            return encodeURIComponent(rand);
-          }
+          popupOptions: { width: 452, height: 633 }
         },
         github: {
           name: 'github',
