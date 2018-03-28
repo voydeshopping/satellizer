@@ -48,7 +48,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' && module.ex
           authorizationEndpoint: 'https://accounts.google.com/o/oauth2/auth',
           redirectUri: window.location.origin + '/auth/google/callback',
           requiredUrlParams: ['scope'],
-          optionalUrlParams: ['state'],
           scope: ['profile', 'email'],
           scopePrefix: 'openid',
           scopeDelimiter: ' ',
