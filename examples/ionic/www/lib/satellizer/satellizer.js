@@ -34,7 +34,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' && module.ex
         facebook: {
           name: 'facebook',
           url: '/auth/facebook',
-          authorizationEndpoint: 'https://www.facebook.com/v2.5/dialog/oauth',
+          authorizationEndpoint: 'https://www.facebook.com/v3.0/dialog/oauth',
           redirectUri: window.location.origin + '/auth/facebook/callback',
           requiredUrlParams: ['scope'],
           scope: ['email'],
